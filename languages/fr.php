@@ -1,0 +1,33 @@
+<?php 
+    $lang = array(
+        "Amour" => "❝ Amour, Gloire & Beauté ❞",
+        "mots" => "des mots qui font révééééééé",
+        "decouvrir" => "DÉCOUVRIR",
+        "Our" => "Nos produits",
+        "deconnexion" => "deconnexion",
+        "factures" => "factures",
+        "sauvegarder" => "sauvegarder",
+        "Information" => "Information",
+        "Ajouter" => "Ajouter au panier",
+        "Etablie" => "Etablie depuis 2019",
+        "au" => " au 235, Avenue Saint-Jerome Bureau a Matane.",
+        "Notre" => "Notre institue offre de nombreuses prestations : ",
+        "Vente" => "❝ Ventes de produit, Microdermabrasion, Extensions de cils, Slimwave, Épilation laser, Microneedling, Manicure/Pédicure ❞",
+        "inscrire" => "S'inscrire",
+        "Courriel" => "Courriel",
+        "se" => "Connexion",
+        "passe" => "Mot de passe",
+        "CONFIRMER" => "CONFIRMER",
+        "Nom" => "Nom du Produit",
+        "Panier" => "Votre Panier",
+        "Coût" => "Coût",
+        "Total" => "Total",
+        "Supprimer" => "Supprimer votre panier",
+        "Continuer" => "Continuer de magasiner",
+        "Payer" => "Payer",
+        "connecter" => "se connecter",
+        "inscr" => "inscrivez-vous",
+        "Connexion" => "Connexion",
+                
+    );
+?>

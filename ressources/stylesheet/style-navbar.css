@@ -1,0 +1,294 @@
+/* 
+ Maxence Schroeder
+ style css de la navbar
+*/
+:root{
+    --bg-black-900: #000000;
+    --bg-black-100: #dddddd;
+    --bg-black-50: #eff0f4;
+    --text-black-900: #000000;
+    --text-black-700: #555555;
+    --text-black-600: #666666;
+    --text-black-300: #bbbbbb;
+    --outer-shadow:3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    --outer-shadow2:0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+    --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+    --basic-color:#FBCA2B;
+}
+
+
+/* Dropdown */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+  
+  .dd-button {
+    display: inline-block;
+    color: var(--basic-color);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-button:after {
+    content: none;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+
+  
+  
+  .dd-input {
+    display: none;
+  }
+  
+  .dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0px 0 0 0;
+    background-color: #ffffff;
+    list-style-type: none;
+  }
+  
+  .dd-input + .dd-menu {
+    display: none;
+  } 
+  
+  .dd-input:checked + .dd-menu {
+    display: block;
+  } 
+  
+  .dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-menu li:hover {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+  }
+  
+  .dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+  }
+  
+  .dd-menu li.divider{
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+  }
+
+
+
+.logo{
+    letter-spacing: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    float: left;
+    font-weight: 700px;
+    text-decoration: none;
+    color:#FBCA2B;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 16px;
+    padding: 0 10px;
+    text-transform: none;
+}
+.logo_img{
+    float:left;
+    margin:0px auto;
+    padding-right:10px;
+    margin-left: 17px;
+    padding-left:10px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    max-height: 51px;
+    top: 0;
+    background: #242331;
+    box-sizing: border-box;
+    z-index:4;
+}
+.clearfix{
+    clear: both;
+}
+.user-icon{
+    /* z-index: 1; */
+    margin: 10px;
+    color:var(--basic-color);
+}
+.navbar-panier{
+    margin: 10px;
+    color:var(--basic-color);  
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+}
+.button_signup {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+    display: block;
+    margin-top: 1px;
+    padding: 10px 20px;
+    visibility: hidden;
+    display: none;
+    float: left;
+    /* transition-duration: 1s; */
+    border-radius: 5px;
+    text-decoration: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+  
+.button_signup:hover {
+    background-color: #000000;
+    color: white;
+}
+.button_signin {
+    background-color: #000000;
+    color: white;
+    border: 2px solid #000000;
+    display: block;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    float: left;
+    visibility: hidden;
+    display: none;
+    text-decoration: none;
+    /* transition-duration: 1s; */
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  
+  .button_signin:hover {
+    background-color: white;
+    color: black;
+  }
+  @media(min-width: 901px){
+    .mobile-user-icon{
+        visibility: hidden;
+        display: none;
+    }
+    .mobile-home-icon{
+        visibility: hidden;
+        display: none;
+    }
+    .mobile-navbar-panier{
+        visibility: hidden;
+        display: none;
+    }
+
+  }
+  @media(max-width:900px){
+        nav {
+            /* display: flex; */
+            position: fixed;
+            bottom: 0;
+            top: auto;
+            height: 414px;
+            width: 100%;
+            align-items: center;
+            background: #fff;
+            max-height: 71px;
+      }
+      .logo{
+          visibility: hidden;
+          display: none;
+      }
+      .logo_img{
+        visibility: hidden;
+        display: none;
+    }
+    nav ul{
+        max-width: 100%;
+        justify-content: center;
+    }
+    .button_signup{
+        visibility:visible;
+        display:block;
+    }
+    .button_signin{
+        visibility:visible;
+        display:block;
+    }
+    .user-icon{
+        visibility: hidden;
+        display: none;
+    }
+    .navbar-panier{
+        visibility: hidden;
+        display: none;
+    }
+    .mobile-user-icon{
+        bottom: 0;
+        left: 0;
+        color: #000000;
+        right: 0;
+        font-size: 30px;
+    }
+    .mobile-home-icon{
+        bottom: 0;
+        left: 0;
+        color: #000000;
+        right: 0;
+        font-size: 30px;
+    }
+    .mobile-navbar-panier{
+        bottom: 0;
+        left: 0;
+        margin: 55px;
+        color: #000000;
+        right: 0;
+        font-size: 30px;
+    }
+     .dd-button{
+       color: #000000;
+       /*margin-top: 14px;*/
+       font-size: 30px;
+       margin-left: 20px;
+     }
+     .dd-menu{
+       margin-top: -140px;
+       margin-left:10px;
+     }
+
+  }
